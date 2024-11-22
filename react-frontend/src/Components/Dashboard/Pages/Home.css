@@ -1,0 +1,134 @@
+.table {
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border-collapse: collapse;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+  
+  }
+  
+  
+  .table thead th {
+  background-color: rgb(21, 133, 148);
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  padding: 12px; 
+  min-width: 130px;
+  max-width: 150px; 
+  }
+  
+  
+  .table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+  }
+  
+  
+  .table td, .table th {
+  padding: 3px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 50px;
+  box-sizing: border-box;
+  }
+  .action-cell{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  
+  .table-hover tbody tr:hover {
+  background-color: #e9ecef;
+  }
+  
+  
+  .table tbody td:first-child {
+  text-align: center;
+  font-weight: bold;
+  }
+  
+  
+  @media (max-width: 768px) {
+  .table {
+    width: 100%;
+  }
+  
+  .table thead {
+    display: none;
+  }
+  
+  .table tbody tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .table tbody td {
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #495057;
+  }
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 12px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-right: 8px; 
+    transition: background-color 0.3s;
+  }
+  
+
+  .edit-btn {
+    background-color: #007bff; 
+    color: white; 
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+
+.message {
+  margin-bottom: 15px; 
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease;
+}
+
+.success {
+    background-color: #28a745; 
+}
+
+.error {
+    background-color: #dc3545; 
+}
